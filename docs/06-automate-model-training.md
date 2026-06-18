@@ -38,7 +38,7 @@ First, you create the Azure Machine Learning workspace and compute resources you
 	rm -r mslearn-mlops -f
 	git clone https://github.com/MicrosoftLearning/mslearn-mlops.git mslearn-mlops
 	cd mslearn-mlops/infra
-	./setup.sh
+    ./setup.sh <REGION WORKS FOR YOU>
 	```
 
 	> Ignore any messages that say that extensions couldn't be installed.
