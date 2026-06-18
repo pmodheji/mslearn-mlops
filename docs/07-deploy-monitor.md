@@ -63,7 +63,7 @@ First, you create or reuse an Azure Machine Learning workspace and the data asse
 1. Run the setup script:
 
 	```azurecli
-	./setup.sh
+    ./setup.sh <REGION WORKS FOR YOU>
 	```
 
 	> Ignore any messages that say that extensions couldn't be installed.
