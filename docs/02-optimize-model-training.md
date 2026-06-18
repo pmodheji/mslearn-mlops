@@ -43,7 +43,7 @@ To create the Azure Machine Learning workspace, a compute instance, and a comput
     
     ```azurecli
     cd mslearn-mlops/infra
-    ./setup.sh
+    ./setup.sh <REGION WORKS FOR YOU>
     ```
 
     > Ignore any (error) messages that say that the extensions were not installed.
