@@ -37,7 +37,7 @@ To create the Azure Machine Learning workspace, a compute instance, and a comput
 
     ```azurecli
     rm -r mslearn-mlops -f
-    git clone https://github.com/MicrosoftLearning/mslearn-mlops.git mslearn-mlops
+    git clone https://github.com/pmodheji/mslearn-mlops.git mslearn-mlops
     ```
 
     > Use `SHIFT + INSERT` to paste your copied code into the Cloud Shell.
@@ -103,7 +103,7 @@ When you've created the workspace and necessary compute resources, you can open 
 1. Run the following command to clone a Git repository containing notebooks, data, and other files to your workspace:
 
     ```
-    git clone https://github.com/MicrosoftLearning/mslearn-mlops.git mslearn-mlops
+    git clone https://github.com/pmodheji/mslearn-mlops.git mslearn-mlops
     ```
 
 1. When the command has completed, in the **Files** pane, click **&#8635;** to refresh the view and verify that a new **Users/*your-user-name*/mslearn-mlops** folder has been created.
