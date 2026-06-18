@@ -43,7 +43,7 @@ You can manually create necessary resources and assets to work with Azure Machin
 
 	```azurecli
 	cd mslearn-mlops/infra
-	code setup.sh
+    ./setup.sh <REGION WORKS FOR YOU>
 	```
 
 	> [!NOTE]
