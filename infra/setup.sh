@@ -1,5 +1,16 @@
 #! /usr/bin/sh
 
+# Usage: ./setup.sh <region>
+# If no region is supplied, falls back to a random region from the default list.
+
+REGIONS=("eastus" "westus" "centralus" "northeurope" "westeurope")
+
+if [ -n "$1" ]; then
+    RANDOM_REGION="$1"
+else
+    RANDOM_REGION=${REGIONS[$RANDOM % ${#REGIONS[@]}]}
+fi
+
 # Create random string
 guid=$(cat /proc/sys/kernel/random/uuid)
 suffix=${guid//[-]/}
@@ -8,8 +19,6 @@ suffix=${suffix:0:18}
 # Set the necessary variables
 RESOURCE_GROUP="rg-ai300-l${suffix}"
 RESOURCE_PROVIDER="Microsoft.MachineLearningServices"
-REGIONS=("eastus" "westus" "centralus" "northeurope" "westeurope")
-RANDOM_REGION=${REGIONS[$RANDOM % ${#REGIONS[@]}]}
 WORKSPACE_NAME="mlw-ai300-l${suffix}"
 COMPUTE_INSTANCE="ci${suffix}"
 COMPUTE_CLUSTER="aml-cluster"
